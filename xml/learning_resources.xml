@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Learning Resources" />
+
+  <Content type="html" view="home">
+
+    <![CDATA[     
+       
+     <style type="text/css">                      
+        .imgBox
+        {
+            width: 130px;
+            height: 55px;
+        }
+        
+         .imgBox:hover {  border: solid 1px #CCC;
+            -moz-box-shadow: 1px 1px 5px #999;
+             -webkit-box-shadow: 1px 1px 5px #999;
+             box-shadow: 1px 1px 5px #999;}             
+      
+       
+        .fontfamily
+        {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 13pt;
+        }
+        .fontfamily2
+        {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 9pt;
+        }
+        
+         .outerTable
+        {           
+            width: 40%;                    
+            height:250px;
+        }
+
+        .hrln
+        {
+            height: 1.5px; 
+            border: none; 
+            color: #333; 
+            background-color: #333;
+        }
+        
+        
+    </style>
+    
+    <table class="outerTable">
+        <tr>
+            <td colspan="2">
+                <table width="100%">
+                    <tr>
+                        <td width="32%">
+                            <hr class="hrln" />
+                        </td>
+                        <td width="36%" align="center">                           
+                            <span style="font-size:13pt"> Technical Learning Resources</span>
+                        </td>
+                        <td width="34%">
+                            <hr class="hrln"  />
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <tr>
+                        <td valign="top" width="33%" align="center">
+                            <img  src="../res/images/01.jpg" class="imgBox"
+                                 />
+                        </td>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/02.jpg"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/03.jpg"
+                                class="imgBox" />
+                        </td>
+                     
+                    </tr>
+
+                    <tr>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/04.jpg"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/05.jpg"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/06.jpg"
+                                class="imgBox" />
+                        </td>
+                                         
+                    </tr>
+
+                       <tr>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/07.jpg" class="imgBox" />
+                        </td>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/08.jpg"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/09.jpg"
+                                class="imgBox" />
+                        </td>
+                                         
+                    </tr>
+
+                       <tr>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/10.jpg" class="imgBox" />
+                        </td>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/11.jpg"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top" width="33%" align="center">
+                        
+                        </td>
+                                         
+                    </tr>
+
+                     <tr>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/12.jpg" class="imgBox" />
+                        </td>
+                        <td valign="top" width="33%" align="center">
+                            <img src="../res/images/13.jpg"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top" width="33%" align="center">
+                         
+                        </td>
+                                         
+                    </tr>
+
+
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+    
+    ]]>
+
+    
+    
+  </Content>
+  <Content type="html" view="canvas">
+    <![CDATA[    
+      
+     ]]>
+  </Content>
+</Module>
+
