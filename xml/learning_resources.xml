@@ -58,7 +58,7 @@
             var flink1;
             var flink2;
 
-            $.get("../res/link/LinkURL.txt",
+            $.get("LinkURL.txt",
                function (txt, status, jqXHR) {
 
                    var lines = txt.split("\n");
