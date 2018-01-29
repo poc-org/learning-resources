@@ -7,73 +7,72 @@
     <![CDATA[     
        
      <style type="text/css">
-         .imgBox
-         {
-             width: 130px;
-             height: 40px;
-         }
-         
-         .imgBox:hover
-         {
-             border: solid 1px #CCC;
-             -moz-box-shadow: 1px 1px 5px #999;
-             -webkit-box-shadow: 1px 1px 5px #999;
-             box-shadow: 1px 1px 5px #999;
-         }
-         
-         
-         .fontfamily
-         {
-             font-family: arial, helvetica, sans-serif;
-             font-size: 13pt;
-         }
-         .fontfamily2
-         {
-             font-family: arial, helvetica, sans-serif;
-             font-size: 9pt;
-         }
-         
-         .outerTable
-         {
-             width: 70%;
-             height: 270px;
-         }
-         
-         .hrln
-         {
-             height: 1.5px;
-             border: none;
-             color: #333;
-             background-color: #333;
-         }
-     </style>
+        .imgBox
+        {
+            width: 160px;
+            height: 40px;
+        }
+        
+        .imgBox:hover
+        {
+            border: solid 1px #CCC;
+            -moz-box-shadow: 1px 1px 5px #999;
+            -webkit-box-shadow: 1px 1px 5px #999;
+            box-shadow: 1px 1px 5px #999;
+        }
+        
+        
+        .fontfamily
+        {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 13pt;
+        }
+        .fontfamily2
+        {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 9pt;
+        }
+        
+        .outerTable
+        {
+            width: 70%;
+            height: 270px;
+        }
+        
+        .hrln
+        {
+            height: 1.5px;
+            border: none;
+            color: #333;
+            background-color: #333;
+        }
+    </style>
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
     </script>
     <script language="javascript" type="text/javascript">
         linkHper();
         function linkHper() {
-
             var link;
             var flink1;
             var flink2;
-
-            $.get("https://raw.githubusercontent.com/poc-org/learning-resources/itg/res/link/LinkURL.txt",
+            var linkFilePath = 'https://raw.githubusercontent.com/poc-org/learning-resources/itg/res/link/LinkURL.txt';
+            // var linkFilePath = "LinkURL.txt";
+            $.get(linkFilePath,
                function (txt, status, jqXHR) {
-
                    var lines = txt.split("\n");
-                   for (var i = 0, len = lines.length; i < len; i++) {
-
-                       link = lines[i].split('=');
+                   for (var i = 0, len = lines.length - 1; i < len; i++) {
+                       link = lines[i].split('|');
                        flink1 = link[0];
                        flink2 = link[1];
                        document.getElementById(flink1).href = flink2;
+
                    }
                },
         "text"
      );
 
-   }
+        }
     
     </script>
 
@@ -82,13 +81,13 @@
             <td colspan="2">
                 <table width="100%">
                     <tr>
-                        <td width="28%" colspan="2">
+                        <td width="40%" colspan="2">
                             <hr class="hrln" />
                         </td>
-                        <td width="44%" align="center" colspan="2">
+                        <td width="30%" align="center" colspan="2">
                             <span style="font-size: 13pt">Technical Learning Resources</span>
                         </td>
-                        <td width="28%" colspan="2">
+                        <td width="40%" colspan="2">
                             <hr class="hrln" />
                         </td>
                     </tr>
