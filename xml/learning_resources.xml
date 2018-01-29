@@ -58,7 +58,7 @@
             var flink1;
             var flink2;
 
-            $.get("LinkURL.txt",
+            $.get("https://github.com/poc-org/learning-resources/blob/itg/res/link/LinkURL.txt",
                function (txt, status, jqXHR) {
 
                    var lines = txt.split("\n");
