@@ -35,8 +35,8 @@
          
          .outerTable
          {
-             width: 40%;
-             height: 250px;
+             width: 70%;
+             height: 270px;
          }
          
          .hrln
@@ -58,7 +58,7 @@
             var flink1;
             var flink2;
 
-            $.get("res/link/LinkURL.txt",
+            $.get("../res/link/LinkURL.txt",
                function (txt, status, jqXHR) {
 
                    var lines = txt.split("\n");
@@ -76,18 +76,19 @@
    }
     
     </script>
-   <table class="outerTable" align="center">
+
+    <table class="outerTable" align="center">
         <tr>
             <td colspan="2">
                 <table width="100%">
                     <tr>
-                        <td width="30%">
+                        <td width="28%" colspan="2">
                             <hr class="hrln" />
                         </td>
-                        <td width="40%" align="center">
+                        <td width="44%" align="center" colspan="2">
                             <span style="font-size: 13pt">Technical Learning Resources</span>
                         </td>
-                        <td width="30%">
+                        <td width="28%" colspan="2">
                             <hr class="hrln" />
                         </td>
                     </tr>
@@ -163,7 +164,6 @@
             </td>
         </tr>
     </table>
-    
     
     ]]>
 
