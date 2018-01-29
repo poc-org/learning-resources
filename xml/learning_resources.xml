@@ -76,18 +76,18 @@
    }
     
     </script>
-    <table class="outerTable">
+   <table class="outerTable" align="center">
         <tr>
             <td colspan="2">
                 <table width="100%">
                     <tr>
-                        <td width="32%">
+                        <td width="30%">
                             <hr class="hrln" />
                         </td>
-                        <td width="36%" align="center">
+                        <td width="40%" align="center">
                             <span style="font-size: 13pt">Technical Learning Resources</span>
                         </td>
-                        <td width="34%">
+                        <td width="30%">
                             <hr class="hrln" />
                         </td>
                     </tr>
@@ -163,6 +163,7 @@
             </td>
         </tr>
     </table>
+    
     
     ]]>
 
