@@ -1,163 +1,147 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<Module>
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
   <ModulePrefs title="Learning Resources" />
 
   <Content type="html" view="home">
 
     <![CDATA[     
        
-     <style type="text/css">                      
-        .imgBox
-        {
-            width: 130px;
-            height: 55px;
-        }
-        
-         .imgBox:hover {  border: solid 1px #CCC;
-            -moz-box-shadow: 1px 1px 5px #999;
+     <style type="text/css">
+         .imgBox
+         {
+             width: 130px;
+             height: 55px;
+         }
+         
+         .imgBox:hover
+         {
+             border: solid 1px #CCC;
+             -moz-box-shadow: 1px 1px 5px #999;
              -webkit-box-shadow: 1px 1px 5px #999;
-             box-shadow: 1px 1px 5px #999;}             
-      
-       
-        .fontfamily
-        {
-            font-family: arial, helvetica, sans-serif;
-            font-size: 13pt;
-        }
-        .fontfamily2
-        {
-            font-family: arial, helvetica, sans-serif;
-            font-size: 9pt;
-        }
-        
+             box-shadow: 1px 1px 5px #999;
+         }
+         
+         
+         .fontfamily
+         {
+             font-family: arial, helvetica, sans-serif;
+             font-size: 13pt;
+         }
+         .fontfamily2
+         {
+             font-family: arial, helvetica, sans-serif;
+             font-size: 9pt;
+         }
+         
          .outerTable
-        {           
-            width: 40%;                    
-            height:250px;
-        }
+         {
+             width: 40%;
+             height: 250px;
+         }
+         
+         .hrln
+         {
+             height: 1.5px;
+             border: none;
+             color: #333;
+             background-color: #333;
+         }
+     </style>
 
-        .hrln
-        {
-            height: 1.5px; 
-            border: none; 
-            color: #333; 
-            background-color: #333;
-        }
-                
-    </style>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script language="javascript" type="text/javascript">
+        linkHper();
+        function linkHper() {
 
- <script language="javascript" type="text/javascript">
-        function linkHper(val) {
-            if (val == '01') {
-                document.getElementById("01").href = "https://www.google.com";
-                document.getElementById("01").target = "_blank"
-            }
-            else if (val == '02') {
-                document.getElementById("02").href = "https://mva.microsoft.com/";
-                document.getElementById("02").target = "_blank"
-            }
-            else if (val == '03') {
-                document.getElementById("03").href = "https://aws.amazon.com/";
-                document.getElementById("03").target = "_blank"
-            }
-            else if (val == '04') {
-                document.getElementById("04").href = "https://mva.microsoft.com/";
-                document.getElementById("04").target = "_blank"
-            }
-            else if (val == '05') {
-                document.getElementById("05").href = "https://www.google.com";
-                document.getElementById("05").target = "_blank"
-            }
-            else if (val == '06') {
-                document.getElementById("06").href = "https://azure.microsoft.com/en-us/?v=18.01";
-                document.getElementById("06").target = "_blank"
-            }
-            else if (val == '07') {
-                document.getElementById("07").href = "https://www.google.com";
-                document.getElementById("07").target = "_blank"
-            }
-            else if (val == '08') {
-                document.getElementById("08").href = "https://www.google.com";
-                document.getElementById("08").target = "_blank"
-            }
-            else if (val == '09') {
-                document.getElementById("09").href = "https://www.google.com";
-                document.getElementById("09").target = "_blank"
-            }
-            else if (val == '10') {
-                document.getElementById("10").href = "https://www.google.com";
-                document.getElementById("10").target = "_blank"
-            }
-            else if (val == '11') {
-                document.getElementById("11").href = "https://www.google.com";
-                document.getElementById("11").target = "_blank"
-            }
-            else if (val == '12') {
-                document.getElementById("12").href = "https://www.google.com";
-                document.getElementById("12").target = "_blank"
-            }
-            else if (val == '13') {
-                document.getElementById("13").href = "https://www.google.com";
-                document.getElementById("13").target = "_blank"
-            }
+            var link;
+            var flink1;
+            var flink2;
 
-        }
+            $.get("res/link/LinkURL.txt",
+               function (txt, status, jqXHR) {
+
+                   var lines = txt.split("\n");
+                   for (var i = 0, len = lines.length; i < len; i++) {
+
+                       link = lines[i].split('=');
+                       flink1 = link[0];
+                       flink2 = link[1];
+                       document.getElementById(flink1).href = flink2;
+                   }
+               },
+        "text"
+     );
+
+   }
     
     </script>
-    
     <table class="outerTable">
         <tr>
             <td colspan="2">
                 <table width="100%">
-                      <tr>
+                    <tr>
+                        <td width="32%">
+                            <hr class="hrln" />
+                        </td>
+                        <td width="36%" align="center">
+                            <span style="font-size: 13pt">Technical Learning Resources</span>
+                        </td>
+                        <td width="34%">
+                            <hr class="hrln" />
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <tr>
                         <td valign="top" width="33%" align="center">
-                            <a id="01" onclick="linkHper('01')">
+                            <a id="01" href="" target="_blank">
                                 <img src="../res/images/01.jpg" class="imgBox" /></a>
                         </td>
                         <td valign="top" width="33%" align="center">
-                            <a id="02" onclick="linkHper('02')">
+                            <a id="02" href="" target="_blank">
                                 <img src="../res/images/02.jpg" class="imgBox" /></a>
                         </td>
                         <td valign="top" width="33%" align="center">
-                            <a id="03" onclick="linkHper('03')">
+                            <a id="03" href="" target="_blank">
                                 <img src="../res/images/03.jpg" class="imgBox" /></a>
                         </td>
                     </tr>
                     <tr>
                         <td valign="top" width="33%" align="center">
-                            <a id="04" onclick="linkHper('04')">
+                            <a id="04" href="" target="_blank">
                                 <img src="../res/images/04.jpg" class="imgBox" /></a>
                         </td>
                         <td valign="top" width="33%" align="center">
-                            <a id="05" onclick="linkHper('05')">
+                            <a id="05" href="" target="_blank">
                                 <img src="../res/images/05.jpg" class="imgBox" /></a>
                         </td>
                         <td valign="top" width="33%" align="center">
-                            <a id="06" onclick="linkHper('06')">
+                            <a id="06"  target="_blank">
                                 <img src="../res/images/06.jpg" class="imgBox" /></a>
                         </td>
                     </tr>
                     <tr>
                         <td valign="top" width="33%" align="center">
-                            <a id="07" onclick="linkHper('07')">
+                            <a id="07"  target="_blank">
                                 <img src="../res/images/07.jpg" class="imgBox" /></a>
                         </td>
                         <td valign="top" width="33%" align="center">
-                            <a id="08" onclick="linkHper('08')">
+                            <a id="08" target="_blank">
                                 <img src="../res/images/08.jpg" class="imgBox" /></a>
                         </td>
                         <td valign="top" width="33%" align="center">
-                            <a id="09" onclick="linkHper('09')">
+                            <a id="09" target="_blank">
                                 <img src="../res/images/09.jpg" class="imgBox" /></a>
                         </td>
                     </tr>
                     <tr>
                         <td valign="top" width="33%" align="center">
-                            <a id="10" onclick="linkHper('10')">
+                            <a id="10" target="_blank">
                                 <img src="../res/images/10.jpg" class="imgBox" /></a>
                         </td>
                         <td valign="top" width="33%" align="center">
-                            <a id="11" onclick="linkHper('11')">
+                            <a id="11" target="_blank">
                                 <img src="../res/images/11.jpg" class="imgBox" /></a>
                         </td>
                         <td valign="top" width="33%" align="center">
@@ -165,26 +149,23 @@
                     </tr>
                     <tr>
                         <td valign="top" width="33%" align="center">
-                            <a id="12" onclick="linkHper('12')">
+                            <a id="12" target="_blank">
                                 <img src="../res/images/12.jpg" class="imgBox" /></a>
                         </td>
                         <td valign="top" width="33%" align="center">
-                            <a id="13" onclick="linkHper('13')">
+                            <a id="13" target="_blank">
                                 <img src="../res/images/13.jpg" class="imgBox" /></a>
                         </td>
                         <td valign="top" width="33%" align="center">
                         </td>
                     </tr>
-
                 </table>
             </td>
         </tr>
     </table>
     
-    
     ]]>
 
-    
     
   </Content>
   <Content type="html" view="canvas">
@@ -192,5 +173,4 @@
       
      ]]>
   </Content>
-</Module>
-
+</module>
