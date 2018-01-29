@@ -10,7 +10,7 @@
          .imgBox
          {
              width: 130px;
-             height: 55px;
+             height: 40px;
          }
          
          .imgBox:hover
