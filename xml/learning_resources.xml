@@ -6,11 +6,11 @@
 
     <![CDATA[     
        
-     <style type="text/css">
+      <style type="text/css">
         .imgBox
         {
             width: 160px;
-            height: 30px;            
+            height: 30px;
         }
         
         .imgBox:hover
@@ -20,7 +20,8 @@
             -webkit-box-shadow: 1px 1px 5px #999;
             box-shadow: 1px 1px 5px #999;
         }
-                
+        
+        
         .fontfamily
         {
             font-family: arial, helvetica, sans-serif;
@@ -33,7 +34,7 @@
         }
         
         .outerTable
-        {               
+        {
             width: 100%;
             height: 200px;
         }
@@ -46,9 +47,8 @@
             background-color: #333;
         }
     </style>
-       
 
-   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
     </script>
     <script language="javascript" type="text/javascript">
         linkHper();
@@ -74,27 +74,23 @@
         }
     
     </script>
-
-      <table class="outerTable" align="center">
+     <table class="outerTable" align="center">
         <tr>
             <td colspan="2">
                 <table width="100%">
                     <tr>
-                        <td width="40%" colspan="2">
+                        <td width="30%" colspan="2">
                             <hr class="hrln" />
                         </td>
-                        <td width="20%" align="center" colspan="2">
+                        <td width="40%" align="center" colspan="2">
                             <span style="font-size: 13pt">Technical Learning Resources</span>
-                                                        
                         </td>
-                        <td width="40%" colspan="2">
+                        <td width="30%" colspan="2">
                             <hr class="hrln" />
                         </td>
                     </tr>
                 </table>
                 <table width="100%">
-             
-
                     <tr>
                         <td valign="top" width="33%" align="center">
                             <a id="01" href="" target="_blank">
