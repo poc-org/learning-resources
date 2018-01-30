@@ -6,7 +6,7 @@
 
     <![CDATA[     
        
-     <style type="text/css">
+      <style type="text/css">
         .imgBox
         {
             width: 160px;
@@ -35,8 +35,8 @@
         
         .outerTable
         {
-            width: 70%;
-            height: 270px;
+            width: 100%;
+            height: 272px;
         }
         
         .hrln
@@ -48,7 +48,7 @@
         }
     </style>
 
-   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
     </script>
     <script language="javascript" type="text/javascript">
         linkHper();
@@ -66,7 +66,6 @@
                        flink1 = link[0];
                        flink2 = link[1];
                        document.getElementById(flink1).href = flink2;
-
                    }
                },
         "text"
@@ -75,19 +74,18 @@
         }
     
     </script>
-
-    <table class="outerTable" align="center">
+     <table class="outerTable" align="center">
         <tr>
             <td colspan="2">
                 <table width="100%">
                     <tr>
-                        <td width="40%" colspan="2">
+                        <td width="30%" colspan="2">
                             <hr class="hrln" />
                         </td>
-                        <td width="30%" align="center" colspan="2">
+                        <td width="40%" align="center" colspan="2">
                             <span style="font-size: 13pt">Technical Learning Resources</span>
                         </td>
-                        <td width="40%" colspan="2">
+                        <td width="30%" colspan="2">
                             <hr class="hrln" />
                         </td>
                     </tr>
@@ -163,7 +161,7 @@
             </td>
         </tr>
     </table>
-    
+
     ]]>
 
     
